@@ -1,6 +1,6 @@
 package main
 
-//import "fmt"
+import "fmt"
 
 // GOLANG DOES NOT HAVE CLASSES ONLY FUNCTIONS! //
 
@@ -17,10 +17,18 @@ func main() {
 	//cards.print()
 	//cards.print()
 
-	cards := newDeck()
-	hand, remainingDeck := deal(cards, 5)
-	hand.print()
-	remainingDeck.print()
-	
+	//cards := newDeck()
+	//hand, remainingDeck := deal(cards, 5)
+	//hand.print()
+	//remainingDeck.print()
+
+	//cards := newDeck()
+	//fmt.Println(cards.ToString())
+
+	//cards := newDeck()
+	//cards.saveToFile("MyCards")
+
+	cards := newDeckFromFile("MyCards")
+	fmt.Println("Shuffled deck:", cards.shuffleDeck())
 
 }
